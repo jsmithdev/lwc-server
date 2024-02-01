@@ -1,0 +1,45 @@
+{
+  "name": "lwc-server",
+  "type": "module",
+  "version": "0.0.2",
+  "description": "Locally build lwcs",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "build:dev": "tsc -w",
+    "start": "node build/index.js",
+    "dev": "concurrently \"npm:watch\" \"npm:serve\" ",
+    "dev:run": "concurrently \"npm:watch\" \"npm:serve\"",
+    "watch": "tsc -w",
+    "serve": "npx nodemon --watch build --exec \"node build/index.js\"",
+    "serve:run": "npx nodemon --watch build --exec \"node build/index.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsmithdev/lwc-server.git"
+  },
+  "keywords": [
+    "salesforce",
+    "lwc",
+    "local",
+    "server"
+  ],
+  "author": "Jamie Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsmithdev/lwc-server/issues"
+  },
+  "homepage": "https://github.com/jsmithdev/lwc-server#readme",
+  "devDependencies": {
+    "@types/node": "^20.11.14",
+    "concurrently": "^8.2.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "copy-file": "^11.0.0",
+    "execa": "^8.0.1",
+    "meow": "^13.1.0"
+  }
+}

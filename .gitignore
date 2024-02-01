@@ -1,0 +1,5 @@
+node_modules
+build/lwr-project/node_modules
+build/lwr-project/__lwr_cache__
+build/lwr-project/site
+build/lwr-project/src/assets
