@@ -29,7 +29,11 @@ Examples
 
 ## Todo
 
-Much. For now this only works for the most basic of LWC.
+Much. For now this only works for basic LWCs.
+
+- can use lightning base components and slds
+
+- can not call apex methods, wire, etc
 
 ## Development
 
